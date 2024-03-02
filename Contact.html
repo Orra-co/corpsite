@@ -28,24 +28,48 @@
     <main class="contact-page">
         <section class="contact-section">
             <h2>Contact Us!</h2>
-            <form action="#" method="post" class="contact-form">
-                <div class="form-group">
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" name="name" placeholder="Your name" required>
-                </div>
-
-                <div class="form-group">
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" placeholder="Your email" required>
-                </div>
-
-                <div class="form-group">
-                    <label for="message">Message:</label>
-                    <textarea id="message" name="message" rows="4" placeholder="Your message" required></textarea>
-                </div>
-
-                <button type="submit" class="button">Submit</button>
+            <form id="signupForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+        
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+        
+                <button type="button" onclick="submitForm()">Sign Up</button>
             </form>
+        
+            <script>
+                function submitForm() {
+                    var name = document.getElementById('name').value;
+                    var email = document.getElementById('email').value;
+        
+                    // Check if name and email are not empty
+                    if (name && email) {
+                        // Save data to the spreadsheet (explained later)
+                        saveToSpreadsheet(name, email);
+        
+                        // Optionally, you can display a thank you message or redirect to a thank you page.
+                        alert('Thank you for signing up!');
+                    } else {
+                        alert('Please fill in both name and email.');
+                    }
+                }
+        
+                function saveToSpreadsheet(name, email) {
+    var url = 'https://script.google.com/macros/s/AKfycbyrEu-PjOCwQoQqhJEh2Zd_0vVXNJkdEf3oxt4q1jQwrDMXZDK67gAj22jTlm4PFLhIww/exec';
+    var data = {
+        name: name,
+        email: email
+    };
+
+    var xhr = new XMLHttpRequest();
+    xhr.open('POST', url, true);
+    xhr.setRequestHeader('Content-Type', 'application/json');
+    xhr.send(JSON.stringify(data));
+}
+
+            </script>
+        
         </section>
 
         <section class="contact-email">
