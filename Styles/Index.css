@@ -1,0 +1,90 @@
+.hero-section {
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-section img {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.hero-content {
+    max-width: 800px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+}
+
+.hero-content h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 1.2em;
+    line-height: 1.5;
+}
+
+.main-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.content-section {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.vertical-image {
+    height: 550px;
+    margin-top: 20px;
+    margin-right: 20px;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+.vertical-image.left {
+    margin-right: 40px;
+}
+
+.vertical-image.right {
+    margin-left: 40px;
+}
+
+.text-content {
+    flex: 1;
+}
+
+.download-button-container {
+    text-align: center;
+    margin-top: 20px; /* Add some space between the last paragraph and the button */
+}
+
+.button-download {
+    display: inline-block;
+    padding: 30px 40px; /* Increase padding for a larger button */
+    font-size: 40px; /* Increase font size */
+    font-family: 'Baloo 2', sans-serif;
+    text-decoration: none;
+    color: white;
+    background-color: #373b47;
+    border: 1px solid #373b47;
+    border-radius: 20px; /* Rounded corners */
+    transition: background-color 0s ease, color 0.3s ease;
+}
+
+.button-download:hover {
+    background-color: #bfc6d1; /* Darker color on hover */
+    color: #373b47;
+    transform: scale(1.2); /* Grow the button on hover */
+}
