@@ -23,11 +23,11 @@ h1 {
     font-family: 'Barlow Condensed', sans-serif; /* Use Blarow Condensed for h1 */
 }
 
-h2, h3, h4, h5, h6 {
+h2, h3, h4, h5 {
     font-family: 'Baloo 2', sans-serif; /* Use Baloo 2 for headings */
 }
 
-p {
+p, li, h6 {
     font-family: 'Barlow Condensed', sans-serif; /* Use Barlow Condensed for Paragraphs */
 }
 
@@ -52,8 +52,7 @@ header {
 .company-tagline {
     flex-grow: 1;
     text-align: center;
-    font-size: 1.5em; /* Increase the font size of the tagline */
-    font-weight: bold; /* Make the tagline bold */
+    font-size: 2em; /* Increase the font size of the tagline */
 }
 
 .buttons {
