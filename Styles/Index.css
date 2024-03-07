@@ -14,7 +14,7 @@
 }
 
 .hero-content {
-    max-width: 800px;
+    max-width: 100%;
     position: absolute;
     top: 50%;
     left: 50%;
