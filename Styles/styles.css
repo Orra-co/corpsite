@@ -59,12 +59,10 @@ header {
 
 .buttons {
     display: flex;
-    margin-right: auto; /* Add more margin to the right of the buttons */
 }
 
 .button {
     font-family: 'Baloo 2', sans-serif; /* Use the Baloo 2 font */
-    margin-left: 10px;
     padding: 20px; /* Increase the padding for larger buttons */
     text-decoration: none;
     color: white;
@@ -78,8 +76,6 @@ header {
 .button:hover {
     background-color: #bfc6d1;
     color: #fff; /* Ensuring text color changes on hover */
-    margin-left: 15px; /* Increase the left margin of the buttons on hover */
-    padding: 22px; /* Increase the padding on hover for larger buttons */
 }  
 
 .footer {
