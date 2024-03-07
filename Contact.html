@@ -36,30 +36,24 @@
   
   <p>Please allow up to 72 hours for us to respond to your inquiries during business hours, excluding
     holidays. Thank you.</p><br>
-            <form
-  action="https://formspree.io/f/xleqlgpb"
-  method="POST"
->
-  <label>
-    Your Name:
-    <input type="name" name="name">
-  </label>
-                
-      <label
-    Your email:
-    <input type="email" name="email">
-  </label>
-                
-      <label>
-    Your Phone Number:
-    <input type="number" name="phone-number">
-  </label>
-                
-  <label>
-    Your message:
-    <textarea name="message"></textarea>
-  </label>
-  <button type="submit">Send</button>
+        <form id="fs-frm" name="contact-form" accept-charset="utf-8" action="https://formspree.io/f/{form_id}" method="post">
+  <fieldset id="fs-frm-inputs">
+    <label for="full-name">Full Name</label>
+    <input type="text" name="name" id="full-name" placeholder="First and Last" required="">
+    
+    <label for="email-address">Email Address</label>
+    <input type="email" name="_replyto" id="email-address" placeholder="email@domain.tld" required="">
+    
+    <label for="telephone">Telephone Number (Optional)</label>
+    <input type="tel" name="telephone" id="telephone" placeholder="(555) 555-5555">
+    
+    <label for="message">Message/Question</label>
+    <textarea rows="6" name="message" id="message" placeholder="Type your message or question here." required=""></textarea>
+    
+    <input type="hidden" name="_subject" id="email-subject" value="Contact/Question Form Submission">
+  </fieldset>
+  
+  <input type="submit" value="Submit">
 </form>
         
         </section>
