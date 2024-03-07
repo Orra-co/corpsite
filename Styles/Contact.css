@@ -37,7 +37,7 @@ textarea {
   width: calc(50% - 10px);
   padding: 8px;
   box-sizing: border-box;
-  border: 1px solid #fff;
+  border: 1px solid #ccc;
   border-radius: 4px;
   display: inline-block;
   vertical-align: top;
