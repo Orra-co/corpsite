@@ -27,50 +27,38 @@
     height: 400px; /* Adjust the height of the large image */
 }
 
-.contact-section {
-    margin-top: 20px;
-    margin-bottom: 20px;
-    text-align: center;
-    padding: 20px;
-    box-sizing: border-box;
+.custom-form {
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  border-radius: 8px;
+  width: 300px;
 }
 
-.contact-section h2 {
-    font-size: 2em;
-    margin-bottom: 10px;
-    margin-top: 10px; /* Adjusted margin-top */
+.form-label {
+  display: block;
+  margin-bottom: 15px;
 }
 
-.contact-section p {
-    margin-bottom: 20px;
+.form-input {
+  width: 100%;
+  padding: 8px;
+  margin-top: 4px;
+  margin-bottom: 12px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
 }
 
-.contact-section form {
-    max-width: 400px;
-    margin: 10px auto; /* Center the form horizontally */
+.form-button {
+  background-color: #4caf50;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
 }
 
-.contact-section label {
-    margin: 5px 0;
-}
-
-.contact-section input {
-    margin-bottom: 10px;
-    padding: 10px;
-    width: 100%;
-    box-sizing: border-box;
-}
-
-.contact-section button {
-    padding: 12px;
-    background-color: #373b47;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.contact-section button:hover {
-    background-color: #bfc6d1;
+.form-button:hover {
+  background-color: #45a049;
 }
