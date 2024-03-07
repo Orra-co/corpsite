@@ -14,7 +14,7 @@
 }
 
 .hero-content {
-    max-width: 100%;
+    max-width: 800px;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -52,8 +52,6 @@
     border-radius: 20px;
     object-fit: cover;
 }
-
-
 
 .vertical-image.left {
     margin-right: 40px;
