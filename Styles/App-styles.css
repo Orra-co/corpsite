@@ -20,6 +20,7 @@
     width: 300px; /* Adjust the width of the small images */
     height: 100px; /* Adjust the height of the small images */
     border-radius: 20px;
+    margin: auto;
 }
 
 .large-image img {
