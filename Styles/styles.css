@@ -16,71 +16,71 @@
 
 body {
     margin: 0;
-    font-family: 'Barlow Condensed', sans-serif;
-    overflow-x: hidden;
+    font-family: 'Barlow Condensed', sans-serif; /* Use Barlow Condensed as the primary font */
+    overflow-x: hidden; /* Eliminating horizontal scrolling on mobile */
 }
 
 h1 {
-    font-family: 'Barlow Condensed', sans-serif;
+    font-family: 'Barlow Condensed', sans-serif; /* Use Blarow Condensed for h1 */
 }
 
 h2, h3, h4, h5, h6 {
-    font-family: 'Baloo 2', sans-serif;
+    font-family: 'Baloo 2', sans-serif; /* Use Baloo 2 for headings */
 }
 
-p, li {
-    font-family: 'Barlow Condensed', sans-serif;
+p,li{
+    font-family: 'Barlow Condensed', sans-serif; /* Use Barlow Condensed for Paragraphs */
 }
 
 header {
     background-color: #373b47;
     color: white;
-    padding: 20px;
+    padding: 20px 20px; /* Increase padding for top and bottom */
 }
 
 .top-bar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 80px;
+    height: 80px; /* Increase the height of the top bar */
 }
 
 .logo img {
-    max-height: 80px;
+    max-height: 80px; /* Adjust the max height of the logo image */
     padding-left: 30px;
 }
 
 .company-tagline {
     flex-grow: 1;
     text-align: center;
-    font-size: 1.5em;
-    font-weight: bold;
+    font-size: 1.5em; /* Increase the font size of the tagline */
+    font-weight: bold; /* Make the tagline bold */
 }
 
 .buttons {
     display: flex;
-    margin-right: 30px;
+    margin-right: 30px; /* Add more margin to the right of the buttons */
 }
 
 .button {
-    font-family: 'Baloo 2', sans-serif;
+    font-family: 'Baloo 2', sans-serif; /* Use the Baloo 2 font */
     margin-left: 10px;
-    padding: 20px;
+    padding: 20px; /* Increase the padding for larger buttons */
     text-decoration: none;
     color: white;
     border: 1px solid white;
-    border-radius: 8px;
+    border-radius: 8px; /* Increase the border-radius for rounded corners */
     transition: background-color 0.3s ease, color 0.3s ease;
     display: flex;
-    align-items: center;
+    align-items: center; /* Center the content vertically */
 }
 
 .button:hover {
     background-color: #bfc6d1;
-    color: #fff;
-    margin-left: 15px;
-    padding: 22px;
-}
+    color: #fff; /* Ensuring text color changes on hover */
+    margin-left: 15px; /* Increase the left margin of the buttons on hover */
+    padding: 22px; /* Increase the padding on hover for larger buttons */
+}  
 
 .footer {
     background-color: #373b47;
@@ -92,19 +92,19 @@ header {
 .footer-links {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: center; /* Center the columns horizontally */
 }
 
 .footer-column {
-    flex-basis: 200px;
-    margin: 0 10px;
-    text-align: left;
+    flex-basis: 200px; /* Set the width of each column */
+    margin: 0 10px; /* Add some margin between columns */
+    text-align: left; /* Align text to the left within each column */
 }
 
 .footer-column h2 {
     margin-bottom: 10px;
     font-size: 18px;
-    font-family: 'Barlow Condensed', sans-serif;
+    font-family: 'Barlow Condensed', sans-serif; /* Set the font for h2 */
 }
 
 .footer-links a {
@@ -113,7 +113,7 @@ header {
     color: white;
     text-decoration: none;
     transition: color 0.3s ease;
-    font-family: 'Barlow Condensed', sans-serif;
+    font-family: 'Barlow Condensed', sans-serif; /* Set the font for links */
 }
 
 .footer-links a:hover {
@@ -126,39 +126,50 @@ body {
 }
 
 .main-content {
-    max-width: 100%;
-    margin: 0;
+    max-width: 800px; /* Adjust the maximum width as needed */
+    margin: 0 auto; /* Center the content */
     padding: 20px;
 }
 
 .content-section {
     display: flex;
-    flex-direction: column;
     align-items: center;
     margin-bottom: 40px;
 }
 
 .vertical-image {
-    width: 100%;
-    max-width: 800px;
-    height: auto;
-    margin-bottom: 20px;
+    height: 550px; /* Adjust the height as needed */
+    margin-top: 20px;
+    margin-right: 20px;
     border-radius: 20px;
-    object-fit: cover;
+    object-fit: cover; /* Ensures the image covers the container */
+}
+
+.vertical-image.left {
+    margin-right: 40px;
+}
+
+.vertical-image.right {
+    margin-left: 40px;
 }
 
 .text-content {
-    text-align: center;
+    flex: 1;
 }
 
-@media (min-width: 768px) {
+@media (max-width: 768px) {
     .content-section {
-        flex-direction: row;
-        text-align: left;
+        flex-direction: column-reverse;
+        text-align: center;
     }
 
     .vertical-image {
-        margin-bottom: 0;
-        margin-right: 20px;
+        margin: 0;
+        margin-bottom: 20px;
+    }
+
+    .vertical-image.left,
+    .vertical-image.right {
+        margin: 0;
     }
 }
