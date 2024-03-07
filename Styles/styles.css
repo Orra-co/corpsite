@@ -172,4 +172,15 @@ body {
     .vertical-image.right {
         margin: 0;
     }
+
+    .buttons {
+        flex-direction: column; /* Stack buttons vertically on small screens */
+        align-items: center; /* Center buttons horizontally on small screens */
+    }
+
+    .button {
+        width: 100%; /* Make the button full width on small screens */
+        margin-top: 10px; /* Add space between buttons on small screens */
+    }
+
 }
