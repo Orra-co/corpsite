@@ -90,9 +90,14 @@
 }
 
 @media (max-width: 768px) {
-    .button-download {
+    .buttons {
+        flex-direction: column; /* Stack buttons vertically on small screens */
+        align-items: center; /* Center buttons horizontally on small screens */
+    }
+
+    .button {
         width: 100%; /* Make the button full width on small screens */
-        box-sizing: border-box; /* Include padding and border in the width calculation */
+        margin-top: 10px; /* Add space between buttons on small screens */
     }
 }
 
