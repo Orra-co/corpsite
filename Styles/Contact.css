@@ -18,44 +18,44 @@
     margin-bottom: 10px;
 }
 
-.contact-form {
-    max-width: 400px;
-    margin: 0 auto; /* Center the form horizontally */
+form {
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  border-radius: 8px;
+  width: 400px;
+  text-align: center; /* Center the text within the form */
 }
 
-.form-group {
-    margin-bottom: 15px;
+label {
+  display: block;
+  margin-bottom: 15px;
 }
 
-.form-group label {
-    display: block;
-    margin-bottom: 5px;
+input,
+textarea {
+  width: calc(50% - 10px);
+  padding: 8px;
+  box-sizing: border-box;
+  border: 1px solid #fff;
+  border-radius: 4px;
+  display: inline-block;
+  vertical-align: top;
 }
 
-.contact-form input,
-.contact-form textarea {
-    width: 100%;
-    padding: 10px;
-    box-sizing: border-box;
+textarea {
+  width: calc(100% - 10px);
 }
 
-.contact-form button {
-    display: block;
-    margin: 0 auto; /* Center the button horizontally */
-    width: 60%; /* Adjust the width as needed */
-    padding: 15px; /* Adjusted padding */
-    background-color: #373b47;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+button {
+  background-color: #373b47;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
 }
 
-.contact-form button:hover {
-    background-color: #bfc6d1;
-}
-
-.contact-email {
-    text-align: center;
+button:hover {
+  background-color: #bfc6d1;
 }
