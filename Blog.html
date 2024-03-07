@@ -11,24 +11,25 @@
     <script src="Scripts/Script.js"></script>
 
      <style>
-    .blog-card {
+     .blog-card {
       max-width: 300px;
       padding: 20px;
       border: 1px solid #ccc;
       border-radius: 8px;
       text-align: center;
+      text-decoration: none; /* Make the whole card a link */
+      color: #333;
+      transition: box-shadow 0.3s ease-in-out;
+    }
+
+    .blog-card:hover {
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     }
 
     .blog-card img {
       max-width: 100%;
       border-radius: 8px;
       margin-bottom: 10px;
-    }
-
-    .blog-card a {
-      text-decoration: none;
-      color: #333;
-      font-weight: bold;
     }
   </style>
 </head>
@@ -52,12 +53,12 @@
 
  <main>
 
-  <div class="blog-card">
-    <img src="Images/study-1.jpeg" alt="Blog Image">
+  <a href="http://www.orra.co/blog-1.html" class="blog-card">
+    <img src="Images/study-1.jpeg" alt="Blog-1 Image">
     <h2>Dating apps: Why dating today might be worse than ever.</h2>
-    <p>March 4th, 2024</p>
-    <a href="http://www.orra.co/blog-1.html" target="_blank">Read More</a>
-  </div>
+    <p>March 4th , 2024</p>
+    <p>Read More</p>
+  </a>
 
  </main>
 </body>
