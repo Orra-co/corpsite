@@ -20,7 +20,6 @@
     width: 300px; /* Adjust the width of the small images */
     height: 100px; /* Adjust the height of the small images */
     border-radius: 20px;
-    margin: auto;
 }
 
 .large-image img {
@@ -30,11 +29,11 @@
 
 .custom-form {
   background-color: #fff;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   padding: 20px;
   border-radius: 8px;
   width: 300px;
   text-align: center; /* Center the text within the form */
+  margin: auto;
 }
 
 .form-group {
@@ -55,7 +54,7 @@
 }
 
 .form-button {
-  background-color: #4caf50;
+  background-color: ##bfc6d1;
   color: #fff;
   padding: 10px;
   border: none;
@@ -64,5 +63,5 @@
 }
 
 .form-button:hover {
-  background-color: #45a049;
+  background-color: ###373b47;
 }
