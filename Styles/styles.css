@@ -17,6 +17,7 @@
 body {
     margin: 0;
     font-family: 'Barlow Condensed', sans-serif; /* Use Barlow Condensed as the primary font */
+    overflow-x: hidden; /* Eliminating horizontal scrolling on mobile */
 }
 
 h1 {
