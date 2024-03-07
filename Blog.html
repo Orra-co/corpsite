@@ -141,15 +141,17 @@
       document.getElementById('overlay').style.display = 'none';
     }
 
-    function copyToClipboard(text) {
-      const textarea = document.createElement('textarea');
-      textarea.value = window.location.origin + '/' + text; // Modify this if your PDF paths are absolute
-      document.body.appendChild(textarea);
-      textarea.select();
-      document.execCommand('copy');
-      document.body.removeChild(textarea);
-      alert('Link copied to clipboard!');
-    }
+   function copyLinkToClipboard() {
+  const baseDomain = 'http://www.orra.co';
+  const relativePath = '/Blog.html';
+  
+  const fullLink = baseDomain + relativePath;
+
+  // Copy to clipboard logic (you need to implement this)
+  // Example: navigator.clipboard.writeText(fullLink);
+
+  alert('Link copied to clipboard!');
+}
   </script>
 
 
