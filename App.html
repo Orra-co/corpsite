@@ -44,47 +44,22 @@
 
         <section class="contact-section">
             <h4>Get notified when our app is ready. Enter your email below:</h4>
-            <form id="signupForm">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-        
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-        
-                <button type="button" onclick="submitForm()">Sign Up</button>
-            </form>
-        
-            <script>
-                function submitForm() {
-                    var name = document.getElementById('name').value;
-                    var email = document.getElementById('email').value;
-        
-                    // Check if name and email are not empty
-                    if (name && email) {
-                        // Save data to the spreadsheet (explained later)
-                        saveToSpreadsheet(name, email);
-        
-                        // Optionally, you can display a thank you message or redirect to a thank you page.
-                        alert('Thank you for signing up!');
-                    } else {
-                        alert('Please fill in both name and email.');
-                    }
-                }
-        
-                function saveToSpreadsheet(name, email) {
-    var url = 'https://script.google.com/macros/s/AKfycbyktlrZjKQ9KmfEapRUFnF7J0OL3ikL7gMMGkkZorySbDoM-qCcDLe98XytBcTgMoDgjQ/exec';
-    var data = {
-        name: name,
-        email: email
-    };
-
-    var xhr = new XMLHttpRequest();
-    xhr.open('POST', url, true);
-    xhr.setRequestHeader('Content-Type', 'application/json');
-    xhr.send(JSON.stringify(data));
-}
-
-            </script>
+     <form
+  action="https://formspree.io/f/mwkgqvnj"
+  method="POST"
+>
+    <label>
+    Your Name:
+    <textarea name="name"></textarea>
+  </label>
+  <label>
+    Your email:
+    <input type="email" name="email">
+  </label>
+  <!-- your other form fields go here -->
+  <button type="submit">Send</button>
+</form>
+            
         </section>
     </main>
 
