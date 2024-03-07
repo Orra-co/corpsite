@@ -59,7 +59,7 @@ header {
 
 .buttons {
     display: flex;
-    margin-right: 30px; /* Add more margin to the right of the buttons */
+    /* margin-right: 30px; /* Add more margin to the right of the buttons */
 }
 
 .button {
