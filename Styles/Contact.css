@@ -25,6 +25,8 @@ form {
   border-radius: 8px;
   width: 400px;
   text-align: center; /* Center the text within the form */
+  margin: auto; /* Center the form horizontally */
+
 }
 
 label {
