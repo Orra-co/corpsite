@@ -32,10 +32,9 @@
 
  <style>
 
-    /* Add some basic styling for the card */
-    .pdf-card {
+     .pdf-card {
       width: 200px; /* Adjust the width based on your preference */
-      height: 200px; /* Make it a square */
+      height: 250px; /* Make it taller to accommodate title and button */
       border: 1px solid #ccc;
       border-radius: 8px;
       overflow: hidden;
@@ -43,6 +42,9 @@
       margin: 20px;
       box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
       transition: transform 0.3s ease-in-out;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
     }
 
     .pdf-card:hover {
@@ -52,7 +54,7 @@
     /* Styling for the PDF preview */
     .pdf-preview {
       width: 100%;
-      height: 100%;
+      height: 80%; /* Adjust the height based on your preference */
       object-fit: cover;
     }
 
@@ -94,13 +96,19 @@
       border: none;
       border-radius: 4px;
       cursor: pointer;
-      margin-top: 10px;
     }
 
     .share-btn:hover {
       background-color: #bfc6d1;
     }
 
+    /* Styling for the title */
+    .pdf-title {
+      padding: 10px;
+      text-align: center;
+      font-size: 14px;
+      font-weight: bold;
+    }
   </style>
 </head>
 <body>
@@ -109,11 +117,11 @@
   <h1 style="text-align: center;">Blog</h1>
 
   <!-- PDF Card -->
-  <div class="pdf-card" onclick="showPreview('study-1.pdf')">
-    <img class="pdf-preview" src="Images/study-1.jpeg" alt="PDF Preview">
-    <p>Dating apps: Why dating today might be worse than ever.</p>
+  <div class="pdf-card" onclick="showPreview('path/to/your/pdf.pdf')">
+    <img class="pdf-preview" src="path/to/your/pdf-thumbnail.jpg" alt="PDF Preview">
+    <div class="pdf-title">PDF Title</div>
     <!-- Share button -->
-    <button class="share-btn" onclick="copyToClipboard('http://www.orra.co/Blog.html')">Share Link</button>
+    <button class="share-btn" onclick="copyToClipboard('path/to/your/pdf.pdf')">Share Link</button>
   </div>
 
   <!-- Overlay for PDF Preview -->
