@@ -88,3 +88,11 @@
     color: #373b47;
     transform: scale(1.2); /* Grow the button on hover */
 }
+
+@media (max-width: 768px) {
+    .button-download {
+        width: 100%; /* Make the button full width on small screens */
+        box-sizing: border-box; /* Include padding and border in the width calculation */
+    }
+}
+
