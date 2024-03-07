@@ -20,13 +20,14 @@
 }
 
 form {
-    background-color: #fff;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    border-radius: 8px;
-    width: 400px;
-    text-align: center; /* Center the text within the form */
-    margin: auto; /* Center the form horizontally */
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 400px; /* Adjust the maximum width as needed */
+  width: 100%; /* Use 100% width to center within .contact-page */
+  margin: auto; /* Center the form horizontally */
+  text-align: center; /* Center the text within the form */
 }
 
 label {
