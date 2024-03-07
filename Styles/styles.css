@@ -42,6 +42,7 @@ header {
     justify-content: space-between;
     align-items: center;
     height: 80px; /* Increase the height of the top bar */
+    width: flex;
 }
 
 .logo img {
