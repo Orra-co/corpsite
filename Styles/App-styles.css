@@ -33,18 +33,21 @@
   padding: 20px;
   border-radius: 8px;
   width: 300px;
+  text-align: center; /* Center the text within the form */
+}
+
+.form-group {
+  margin-bottom: 15px;
 }
 
 .form-label {
   display: block;
-  margin-bottom: 15px;
+  margin-bottom: 5px;
 }
 
 .form-input {
   width: 100%;
   padding: 8px;
-  margin-top: 4px;
-  margin-bottom: 12px;
   box-sizing: border-box;
   border: 1px solid #ccc;
   border-radius: 4px;
