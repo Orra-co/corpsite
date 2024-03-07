@@ -17,14 +17,6 @@
 body {
     margin: 0;
     font-family: 'Barlow Condensed', sans-serif; /* Use Barlow Condensed as the primary font */
-    width: 100vw;
-    height: 100vh;
-}
-
-div {
-    width: 100vw;
-    height: 100vh;
-}
 }
 
 h1 {
@@ -35,7 +27,7 @@ h2, h3, h4, h5 {
     font-family: 'Baloo 2', sans-serif; /* Use Baloo 2 for headings */
 }
 
-p, li, h6 {
+p, li, h6{
     font-family: 'Barlow Condensed', sans-serif; /* Use Barlow Condensed for Paragraphs */
 }
 
@@ -50,7 +42,6 @@ header {
     justify-content: space-between;
     align-items: center;
     height: 80px; /* Increase the height of the top bar */
-    width: flex;
 }
 
 .logo img {
