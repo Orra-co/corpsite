@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>YBlog</title>
+    <title>Blog</title>
     <link rel="stylesheet" href="Styles/styles.css">
     <!-- Add specific page styles -->
     <link rel="stylesheet" href="Styles/blog-styles.css">
@@ -33,7 +33,8 @@
    <style>
     /* Add some basic styling for the card */
     .pdf-card {
-      width: 300px;
+      width: 100%;
+      height: 50vh; /* Set to a percentage of viewport height */
       border: 1px solid #ccc;
       border-radius: 8px;
       overflow: hidden;
@@ -50,7 +51,7 @@
     /* Styling for the PDF preview */
     .pdf-preview {
       width: 100%;
-      height: 200px; /* Adjust the height based on your preference */
+      height: 100%;
       object-fit: cover;
     }
 
@@ -82,6 +83,21 @@
       color: #fff;
       cursor: pointer;
     }
+
+    /* Style for the share button */
+    .share-btn {
+      background-color: #373b47;
+      color: #fff;
+      padding: 10px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+
+    .share-btn:hover {
+      background-color: #bfc6d1;
+    }
   </style>
 </head>
 <body>
@@ -91,8 +107,10 @@
 
   <!-- PDF Card -->
   <div class="pdf-card" onclick="showPreview('study-1.pdf')">
-    <img class="pdf-preview" src="Images/study-1.jpeg" alt="PDF Preview">
-    <p>Click to preview Study</p>
+    <img class="pdf-preview" src="study-1.jpeg" alt="PDF Preview">
+    <p>Click to preview study</p>
+    <!-- Share button -->
+    <button class="share-btn" onclick="copyToClipboard('path/to/your/pdf.pdf')">Share Link</button>
   </div>
 
   <!-- Overlay for PDF Preview -->
@@ -111,10 +129,20 @@
       document.getElementById('pdfIframe').src = '';
       document.getElementById('overlay').style.display = 'none';
     }
+
+    function copyToClipboard(text) {
+      const textarea = document.createElement('textarea');
+      textarea.value = window.location.origin + '/' + text; // Modify this if your PDF paths are absolute
+      document.body.appendChild(textarea);
+      textarea.select();
+      document.execCommand('copy');
+      document.body.removeChild(textarea);
+      alert('Link copied to clipboard!');
+    }
   </script>
 
-</body>
  </main>
+</body>
 
 <footer class="footer">
         <div class="footer-links">
